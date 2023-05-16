@@ -1,7 +1,10 @@
 const todo_app_content=document.querySelector('.todo_app_content')
 const add_tesk=document.getElementById('add_tesk')
 let todo_ul=document.querySelector('.todo_ul')
-
+addEventListener("load", function() {
+    var viewport = document.querySelector("meta[name=viewport]");
+    viewport.setAttribute("content", viewport.content + ", height=" + window.innerHeight);
+})
 
 try{
 	todo_ul.innerHTML=localStorage.getItem("data")
