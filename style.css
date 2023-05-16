@@ -4,6 +4,13 @@
 	box-sizing:border-box;
 }
 
+body {
+	height:100vh;
+	min-height:100vh;
+	width:100%;
+	background:linear-gradient(135deg,rgb(130,145,224),rgb(253,185,255));
+}
+
 .container {
 	height:100vh;
 	min-height:100vh;
